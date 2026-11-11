@@ -75,3 +75,16 @@
     color: #cccccc;
     font-size: 20px;
   }
+
+  .site-header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #0f1111;
+    z-index: 1;
+  }
+  .site-logo { display: block; height: 50px; }
+  .site-logo img { height: 100%; width: auto; display: block; }
+  .upi-container { padding-top: 90px; }

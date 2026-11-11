@@ -9,21 +9,15 @@ body {
     color: #111111;
 }
 .navbar {
-    background: #131921;
+    background: #0f1111;
     color: white;
-    padding: 18px 8%;
+    padding: 12px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    font-size: 27px;
-    font-weight: bold;
-    color: white;
-}
-.logo span {
-    color: #ff9900;
-}
+.site-logo { display: block; height: 50px; }
+.site-logo img { height: 100%; width: auto; display: block; }
 .cart {
     font-size: 16px;
 }

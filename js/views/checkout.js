@@ -12,6 +12,9 @@
     load: loadProduct,
     render(ctx) {
       return `
+<header class="site-header">
+  <a href="#/" class="site-logo" aria-label="Chamazon home"><img src="${Chamazon.util.img('logo.png')}" alt="Chamazon"></a>
+</header>
 <div class="upi-container">
   <div class="upi-title">Pay via UPI</div>
 
@@ -46,7 +49,7 @@
       });
       return `
 <header class="navbar">
-    <div class="logo">Chamazon<span>.in</span></div>
+    <a href="#/" class="site-logo" aria-label="Chamazon home"><img src="${Chamazon.util.img('logo.png')}" alt="Chamazon"></a>
     <div class="cart">🛒 Your Orders</div>
 </header>
 <main class="container">
