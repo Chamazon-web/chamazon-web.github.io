@@ -1,0 +1,3 @@
+/* Always-loaded rules shared by every view. */
+.nav-logo { cursor: pointer; }
+body.modal-open { overflow: hidden; }

@@ -1,0 +1,261 @@
+/* Scoped to .membership-overlay so it can open on top of any page without leaking styles. */
+.membership-overlay { font-family: Arial, Helvetica, sans-serif; }
+
+.membership-overlay *,
+.membership-overlay *::before,
+.membership-overlay *::after {
+    box-sizing: border-box;
+}
+
+.membership-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.membership-overlay .membership-card {
+    position: relative;
+    width: 100%;
+    max-width: 510px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px clamp(14px, 4vw, 24px) 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+
+.membership-overlay .membership-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 32px;
+    background: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership-overlay .membership-close p {
+    margin: 0; color: #ff0202;
+}
+
+.membership-overlay .membership-close a {
+    color: #fa0202;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.membership-overlay .premium-icon {
+    font-size: 42px;
+    color: #ffb000;
+    line-height: 42px;
+    margin-bottom: 5px;
+}
+
+.membership-overlay .membership-card h1 {
+    margin: 0;
+    font-size: clamp(28px, 7vw, 36px);
+    color: #17233c;
+}
+
+.membership-overlay .premium-subtitle {
+    margin: 4px 0 20px;
+    color: #526176;
+    font-size: clamp(14px, 3.6vw, 17px);
+}
+
+.membership-overlay .plans {
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #edf6ff;
+    border: 1px solid #d7e5f4;
+}
+
+.membership-overlay .plan {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding: 16px 4px 12px;
+    cursor: pointer;
+    border-right: 1px solid #d5e2ef;
+    color: #17233c;
+    transition: 0.2s;
+}
+
+.membership-overlay .plan:last-child {
+    border-right: none;
+}
+
+.membership-overlay .plan h3 {
+    margin: 0 0 5px; font-size: clamp(14px, 3.6vw, 17px);
+}
+
+.membership-overlay .plan span {
+    font-size: clamp(11px, 2.9vw, 13px); color: #526176; display: block;
+}
+
+.membership-overlay .plan.active {
+    background: #1688e8; color: white;
+}
+
+.membership-overlay .plan.active span {
+    color: white;
+}
+
+.membership-overlay .best-value {
+    position: absolute;
+    top: -1px;
+    right: 6px;
+    background: #ffd21c;
+    color: #111;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+.membership-overlay .benefits {
+    margin-top: 12px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 14px;
+    padding: 6px 2px;
+}
+
+.membership-overlay .benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0;
+}
+
+.membership-overlay .benefit-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+
+.membership-overlay .delivery {
+    background: #dff2ff; color: #1688e8;
+}
+
+.membership-overlay .access {
+    background: #eee2ff; color: #6639d9;
+}
+
+.membership-overlay .entertainment {
+    background: #ddf7e5; color: #159447;
+}
+
+.membership-overlay .offers {
+    background: #fff0d1; color: #e9a000;
+}
+
+.membership-overlay .benefit h3 {
+    margin: 0 0 3px; font-size: 14px; color: #17233c;
+}
+
+.membership-overlay .benefit p {
+    margin: 0; font-size: 12px; color: #526176;
+}
+
+.membership-overlay .subscription-box {
+    margin-top: 10px;
+    padding: 15px 14px 12px;
+    background: #eaf6ff;
+    border-radius: 10px;
+}
+
+.membership-overlay .price {
+    font-size: clamp(26px, 7vw, 30px);
+    font-weight: bold;
+    color: #101828;
+    margin-bottom: 10px;
+}
+
+.membership-overlay .price span {
+    font-size: 17px; font-weight: normal;
+}
+
+.membership-overlay .subscribe-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background: #ffc400;
+    color: #111;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.membership-overlay .subscribe-btn:hover {
+    background: #ffb900; transform: translateY(-1px);
+}
+
+.membership-overlay .subscription-box p {
+    margin: 9px 0 0; font-size: 11px; color: #526176;
+}
+
+.membership-overlay .subscription-box a {
+    color: #1673b8; text-decoration: none;
+}
+
+.membership-overlay .subscription-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .membership-overlay {
+      padding: 12px;
+  }
+  
+  .membership-overlay .membership-card {
+      border-radius: 10px; padding-top: 32px;
+  }
+  
+  .membership-overlay .benefits {
+      grid-template-columns: 1fr; gap: 0;
+  }
+  
+  .membership-overlay .benefit {
+      gap: 10px;
+  }
+  
+  .membership-overlay .benefit h3 {
+      font-size: 15px;
+  }
+  
+  .membership-overlay .benefit p {
+      font-size: 11px;
+  }
+}
+
+@media (max-height: 560px) {
+  .membership-overlay {
+      align-items: flex-start;
+  }
+}

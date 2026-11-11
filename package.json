@@ -1,0 +1,12 @@
+{
+  "name": "chamazon",
+  "version": "1.0.0",
+  "description": "Chamazon - a demo online shopping website (HTML, CSS, JavaScript).",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes http-server . -p 3000 -c-1 -o",
+    "start:python": "python3 -m http.server 3000"
+  },
+  "keywords": ["ecommerce", "demo", "html", "css", "javascript"],
+  "license": "UNLICENSED"
+}

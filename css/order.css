@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+.navbar {
+    background: #131921;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+.logo span {
+    color: #ff9900;
+}
+.cart {
+    font-size: 16px;
+}
+.container {
+    max-width: 650px;
+    margin: 45px auto;
+    padding: 25px;
+}
+.success-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+}
+h1 {
+    text-align: center;
+    color: #15803d;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+.message {
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.order-id {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+.order-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 24px;
+}
+.order-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 17px;
+    font-size: 15px;
+}
+.label {
+    color: #666;
+}
+.delivery {
+    background: #f0fdf4;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+}
+.delivery h3 {
+    color: #166534;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.delivery p {
+    color: #333;
+    line-height: 1.5;
+}
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #ffd814;
+    color: #111;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #f7ca00;
+}
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin-top: 25px;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 25px auto;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .navbar {
+        padding: 16px 20px;
+    }
+}
