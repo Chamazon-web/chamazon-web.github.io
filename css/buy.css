@@ -88,3 +88,15 @@
   .site-logo { display: block; height: 50px; }
   .site-logo img { height: 100%; width: auto; display: block; }
   .upi-container { padding-top: 90px; }
+
+  /* ===== Responsive ===== */
+  html, body { overflow-x: hidden; }
+  .qr-box { width: min(300px, 80vw); height: min(300px, 80vw); }
+  .upi-footer { width: min(290px, 90vw); }
+  .upi-title { font-size: clamp(22px, 6vw, 32px); }
+  .check { font-size: clamp(16px, 4.5vw, 20px); }
+  @media (max-width: 480px) {
+    .site-header { padding: 10px 14px; }
+    .site-logo { height: 40px; }
+    .upi-container { padding-top: 80px; }
+  }
